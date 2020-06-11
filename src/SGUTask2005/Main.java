@@ -1,4 +1,4 @@
-package SGUTask.Task2005;
+package SGUTask2005;
 
 import java.io.BufferedReader;
 import java.io.IOException;

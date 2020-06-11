@@ -10,10 +10,16 @@ public class Person {
         this.name = name;
     }
 
+    /**
+     * Метод вычисляет является ли человек женатым (за мужем)
+     * @param person - человек
+     * @return true - если женат (замцжем,)
+     */
     public boolean marry(Person person){
 
         //Проверяем что люди не являются супрагами и у них нет других супругов.Если есть то с помошью метода divorce() делаем бракоразводный процесс.
-        if ((!this.spouse.equals(null))&(!this.spouse.equals(person.spouse))||(!person.spouse.equals(null))&(!person.spouse.equals(this.spouse))){
+        if ((!this.spouse.equals(null))&(!this.spouse.equals(person.spouse))
+                ||(!person.spouse.equals(null))&(!person.spouse.equals(this.spouse))){
             this.divorce();
             person.divorce();
         }
