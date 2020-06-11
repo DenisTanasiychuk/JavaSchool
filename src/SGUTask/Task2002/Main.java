@@ -11,19 +11,14 @@ public class Main {
         int n = Integer.parseInt(reader.readLine());
         ArrayList<Integer> list = new ArrayList<>();
         for (int i=0; i<n;i++){
-            list.add((int) (Math.random()* 101));
+            list.add(Integer.parseInt(reader.readLine()));
         }
-        for (int p : list){
-            System.out.println(p);
-        }
-
 
         int sum = 0;
-
 
         for (int p : list){
             sum += p;
         }
-        System.out.println("Сумма чисел равно = " + sum);
+        System.out.println(sum);
     }
 }
