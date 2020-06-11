@@ -12,11 +12,12 @@ public class Person {
 
     public boolean marry(Person person){
 
+        //Проверяем что люди не являются супрагами и у них нет других супругов.Если есть то с помошью метода divorce() делаем бракоразводный процесс.
         if ((!this.spouse.equals(null))&(!this.spouse.equals(person.spouse))||(!person.spouse.equals(null))&(!person.spouse.equals(this.spouse))){
             this.divorce();
             person.divorce();
         }
-
+        // Проверяем что люди разного пола и не являеются супругами.
         if ((this.man!=person.man)&((!this.spouse.equals(person)) & (!person.spouse.equals(this.spouse)))){
 
             return true;
@@ -29,7 +30,7 @@ public class Person {
 
     }
 
-
+    // Если у человека значение spouse не null, то метод превращает его в null.
     public  boolean divorce(){
         if (!(this.spouse.equals(null))){
             this.spouse = null;
