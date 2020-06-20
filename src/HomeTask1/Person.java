@@ -1,4 +1,4 @@
-package HomeTask;
+package HomeTask1;
 
 public class Person {
     private final boolean man;
